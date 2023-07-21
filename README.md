@@ -1,0 +1,3 @@
+Al compartir el link de replit en discord el profe me indicó que pusiera la imagen de portada como fondo del contenedor. Lo intenté pero al cambiar todo en el index se me rompía bastante y al no contar con tanto tiempo lo dejé como estaba.
+El menú lo dejé lo mejor que pude.
+El footer en pantalla de escritorio no quedó exactamente como esperaba yo quería alinear todo sobre una misma línea. Sin embargo quedaron algo desfasados los elementos. 
