@@ -126,66 +126,112 @@ footer {
   height: 300px;
   color: #eff5f5;
   padding: 5%;
-  gap: 1rem;
-  grid-auto-rows: 22rem;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
- }
-   footer h2{
-   text-align: center;
- }
-   footer p {
-   color: #eff5f5;
-   text-align: right;
-   font-family: 'Poppins';
-}
-  .box a{
-    color: #1f8a70;
-    display: inline-flex;
-    text-decoration: none;
-    position: left; 
-    margin-left: 50px;
-    width: 20px;
-    height: 50px;
-  }
-
-   .container-mapa {
-    position: center;
-    align-items: center;
-    display: flex; 
-    justify-content: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  position:relative;
 }
 
-@media (max-width:320px) {
-  button{
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-   } 
-   footer{
-    height: 400px;
-   }
-   footer p{
-    text-align: center;
-   }
-   .box a {
-    padding-left: 10px;
-   }
-    nav.container-menu {
-      display: flex;
-     font-size: 13px;
-   }
+
+footer h2 {
+  text-align: center;
 }
 
-@media (max-width:768px) {
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box a {
+  color: #1f8a70;
+  text-decoration: none;
+  display: inline-block; 
+  margin-right: 10px;
+  
+}
+
+footer h3 {
+  color: #eff5f5;
+  text-align: right;
+  font-family: 'Poppins';
+  margin-right: 150px;
+}
+.contacto {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex; 
+  flex-direction: column; 
+}
+
+.contacto a {
+  color: #eff5f5;
+  text-decoration: none;
+  font-family: 'Poppins';
+}
+  
+@media screen and (max-width: 768px) {
   footer{
     height: 400px;
    }
-   footer p{
+ .contacto {
+    margin-left: -15%;
+  }
+
+  .contacto a {
+    display: flexbox;
     text-align: center;
+    margin-inline-start: -105%;
+  }
+   footer h2{
+    display: flexbox;
    }
+
    .box a {
-    padding-left: 50px;
-   }
+    display: inline-flex;
+    position: static; 
+    margin-left: 10px;
+    width: 20px;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 70px;
+  }
 }
 
+
+  @media screen and (max-width: 320px) {
+    body {
+      width: 320px;
+    }
+  
+    img {
+      width: 100%;
+    }
+  
+    button {
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .box a {
+      color: #1f8a70;
+      display: inline;
+      margin-right: 10px;
+      margin-left: 60px;
+      
+    }
+    .contacto a {
+      display: flex;
+      text-align: center;
+      margin: 0 auto;
+      margin-left: 10px;
+    }
+  
+    nav.container-menu {
+      display: flex;
+      font-size: 13px;
+    }
+  }
+  
